@@ -1,0 +1,29 @@
+body{
+  background: black;
+}
+.container {
+  position: relative;
+  background-color: lightgray;
+  width: 300px;
+  height: 300px;
+  left: 35%;
+  top: 130px;
+  border: 1px solid black;
+  border-radius: 50%;
+  transform: rotatez(10deg);
+  /* box-shadow: inset 4px 4px 15px rgba(255, 255, 255, 0.5); */
+  box-shadow: inset 0px 0px 40px 10px rgba(0, 0, 0, 0.5);
+  background: url("https://cdn.pixabay.com/photo/2017/09/12/20/23/map-world-2743539_960_720.png") blue;
+  background-position: -50px 0%;
+  background-size: 550px;
+  animation-name: rot;
+  animation-duration: 8s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-play-state: running;
+}
+@keyframes rot {
+  0% {background-position: 0% 0%;}
+  100% {background-position: 220% 0%}
+}
